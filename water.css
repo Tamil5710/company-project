@@ -1,0 +1,351 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #fff;
+    color: #000;
+  }
+  header 
+  {
+  position: fixed;
+  top: 0;
+  left: -30px;
+  width: 100%;
+  z-index: 1000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  .logo{
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #000080;
+  }
+  /* Header Safari/Menu Bar */
+  .menu-bar {
+    background: #050505;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .menu-bar span:not(.apple) {
+    cursor: default;
+  }
+  .apple-icon {
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  .menu-bar .menu-items {
+    display: flex;
+    gap: 12px;
+    flex-grow: 1;
+  }
+  /* Safari URL bar */
+  .url-bar {
+    background: #403f3f;
+    color: #ddd;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 12px;
+    flex-grow: 1;
+  }
+  .url-bar .url-text {
+    color: #9999ff;
+  }
+  /* Contact & Logo */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: white;
+    border-bottom: 1px solid #eee;
+  }
+  .contact {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .contact a {
+    color: #1a90ff;
+  }
+  .logo {
+    height: 50px;
+  }
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    background: white;
+    padding: 12px 20px 20px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    
+  }
+  nav a {
+    color: grey;
+    position: relative;
+  }
+  nav a:hover {
+    color: black;
+
+  }
+  nav a .dropdown-arrow {
+    margin-left: 3px;
+    font-size: 10px;
+  }
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('/html/newimage.jpeg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    max-width: 80%;
+  }
+  .btn-view-products {
+    margin-top: 18px;
+    border: 2px solid white;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .btn-view-products:hover {
+    background-color: white;
+    color: #000080;
+  }
+  /* Info Section */
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info-left, .info-right {
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    padding: 40px 40px;
+    color: white;
+  }
+  .info-left {
+    background: grey;
+  }
+  .info-left h2 {
+    font-weight: 800;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+  .info-left hr {
+    width: 40px;
+    border: 2px solid black;
+    margin: 0 0 28px 0;
+  }
+  .info-left p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #e6e6e6;
+    max-width: 420px;
+    line-height: 1.4;
+  }
+  .info-right {
+    background: black;
+    color: white;
+  }
+  .info-right h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .info-right hr {
+    width: 40px;
+    border: 2px solid white;
+    margin: 6px 0 24px 0;
+  }
+  .info-right p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    max-width: 400px;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .info-container {
+      flex-direction: column;
+    }
+    .info-left, .info-right {
+      flex: 1 1 100%;
+      padding: 30px 20px;
+    }
+  }
+  main {
+    padding: 2rem 4rem;
+  }
+  main h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .arrow {
+    width: 32px;
+    height: 32px;
+    background: #f9f9f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select:none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #888;
+  }
+  #pro{
+    color: white;
+  }
+  main:hover{
+    background-color: white;
+  }
+ 
+       
+        
+        .services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+
+  background: white;
+}
+
+
+
+/* Card */
+.service-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+
+  
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.service-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #eee;
+}
+
+/* Title */
+.service-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+/* Description */
+.service-desc {
+  font-size: 0.95rem;
+  color: black;
+  padding: 0 15px;
+  line-height: 1.5;
+}
+ footer {
+      background-color: #222;
+      color: #fff;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    .footer-section {
+      max-width: 300px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .footer-section h4 {
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+    }
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+    .footer-section ul li a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    .footer-section ul li a:hover {
+      text-decoration: underline;
+    }
+    .footer-logo img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    .footer-contact a {
+      color: #ddd;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .bottom-bar {
+      background-color: grey;
+      color: white;
+      font-size: 12px;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+ 
+
